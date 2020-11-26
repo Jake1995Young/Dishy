@@ -1,18 +1,14 @@
 /*
     This is the main CSS file which will retrieve the other SCSS files and convert them into one CSS
 */
-/*
+
 @import "Abstracts/Variables";
 @import "Abstracts/Animations";
 @import "Abstracts/Mixins";
 
 @import "Base/Base";
-@import "Base/Grid";
 
-@import "Sections/MainPage";
-@import "Sections/AboutPage";
-@import "Sections/MenuPage";
-@import "Sections/CustomerPage";
-@import "Sections/ContactUsPage";
+@import "Sections/MainSection";
 
-@import "Components/Icon";*/
+@import "Components/PlayButton";
+@import "Components/ReserveButton";
