@@ -10,10 +10,49 @@
     <!--Links to icons frequently used and also the main CSS file-->
     <link rel="stylesheet" type="text/css" href="/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="Icons/ionicons-v2.0.1-master/css/ionicons.min.css">
+
+    <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
 </head>
 
 <body>
+    <section class="MainSection" id="MainSection">
 
+        <div class="NavList">
+            <ul class="NavLinks">
+                <li class="Links Home"><a href="#">Home</a></li>
+                <li class="Links About"><a href="#">About</a></li>
+                <li class="Links Menu"><a href="#">Menu</a></li>
+                <li class="Links Dishy"><a href="#" id="Dishy">Dishy</a></li>
+                <li class="Links Gallery"><a href="#">Gallery</a></li>
+                <li class="Links Events"><a href="#">Events</a></li>
+                <li class="Links Contact"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Button Container for playing a quick video clip -->
+        <div class="BtnCSS PlayBtnMain" alt="Play button">
+            <a class="ion-ios-play-outline PlayButton" href="#PopupVideo"></a>
+        </div>
+        <div class="PopupBackground" id="PopupVideo">
+            <div class="PopupMain">
+                <video src="/Clips/Clip1.mp4" id="VideoClip" width="100%" height="100%" autoplay loop></video>
+                <a class="CloseBtnMain BtnCSS" href="#MainSection">X</a>
+            </div>
+        </div>
+
+        <h1 class="Title">Classic Dishes Elevated</h1>
+        <p class="Info">Let's elevate those favourite dishes of ours and <br>bring them into 2020.
+            Same great base flavours<br> with a boost of loving!</p>
+
+        <div class="ReserveBtn">
+            <a href="#" class="Reserve">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                </svg>Reserve a Table</a>
+        </div>
+
+        </a>
+    </section>
 
 </body>
 

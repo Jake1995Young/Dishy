@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Jake1995Young/Dishy#readme",
   "dependencies": {
+    "git": "^0.1.5",
     "node-sass": "^5.0.0"
   }
 }

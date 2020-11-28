@@ -1,0 +1,46 @@
+.BtnCSS {
+
+    &::before,
+    &::after {
+        /*Need to assign content*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        content: '';
+        transition: all 0.25s ease;
+        border-radius: 100% * .5;
+    }
+
+    /*This is the yellow outline around the circle button*/
+    &::after {
+        box-shadow: inset 0 0 0 3px $Mustard;
+
+    }
+
+    /*Changes the background and the outline shadow*/
+    &::before {
+        background: $Dark-Grey;
+        box-shadow: inset 0 0 0 60px $Dark-Grey;
+    }
+
+    /*On hover changes the background*/
+    &:hover::before {
+        box-shadow: inset 0 0 0 3px $Dark-Grey;
+        background: $Mustard;
+    }
+
+    /*Changes the Play icon to Dark grey on hover*/
+    &:hover a {
+        color: $Dark-Grey;
+    }
+
+    /*Changes the border to dark grey on hover*/
+    &:hover {
+        &::after {
+            box-shadow: inset 0 0 0 3px $Dark-Grey;
+        }
+    }
+}

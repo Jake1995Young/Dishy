@@ -1,0 +1,243 @@
+/*
+    This is the main CSS file which will retrieve the other SCSS files and convert them into one CSS
+*/
+/*
+Colours
+*/
+/*Center any object to the the center of the page*/
+/*
+    Base Page for CSS which will give some standard style for the whole site
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*Allow for smooth scrolling from one section to another*/
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+/*Fonts*/
+@font-face {
+  font-family: AlmondFont;
+  src: url(/Fonts/Almond-Nougat.ttf); }
+
+@font-face {
+  font-family: CinzelFont;
+  src: url(/Fonts/Cinzel-Regular.otf); }
+
+/*This is the main section, it consists of a navbar, Video clip, information, and a booking button*/
+.MainSection {
+  position: relative;
+  height: 100vh;
+  /*Overlapping the image with a two tone gradient (grey->yellow)*/
+  background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic13.jpg");
+  background-size: cover;
+  /*This CSS is for the nav link called Dishy, as I wanted it to have different CSS applied than the other Nav links*/ }
+  .MainSection .NavList {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    height: 10%; }
+  .MainSection .NavLinks {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    list-style: none; }
+  .MainSection .Links {
+    width: auto;
+    height: 10%;
+    padding-right: 3vh;
+    text-transform: uppercase;
+    font-family: "CinzelFont"; }
+  .MainSection #Dishy {
+    /*Pre created font*/
+    font-family: "AlmondFont";
+    font-size: 8vh;
+    text-transform: none;
+    color: #fbe134; }
+  .MainSection .Links a {
+    text-decoration: none;
+    color: white;
+    line-height: 10%;
+    font-size: 3vh; }
+  .MainSection .Links a:hover {
+    color: #fbe134; }
+  .MainSection .Title {
+    position: absolute;
+    /*Use of mixin*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vh;
+    color: white;
+    font-family: "CinzelFont"; }
+  .MainSection .Info {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 3vh;
+    color: white;
+    font-family: "CinzelFont";
+    text-align: center; }
+
+.BtnCSS {
+  /*This is the yellow outline around the circle button*/
+  /*Changes the background and the outline shadow*/
+  /*On hover changes the background*/
+  /*Changes the Play icon to Dark grey on hover*/
+  /*Changes the border to dark grey on hover*/ }
+  .BtnCSS::before, .BtnCSS::after {
+    /*Need to assign content*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    transition: all 0.25s ease;
+    border-radius: 50%; }
+  .BtnCSS::after {
+    box-shadow: inset 0 0 0 3px #e4b61a; }
+  .BtnCSS::before {
+    background: #2a2e34;
+    box-shadow: inset 0 0 0 60px #2a2e34; }
+  .BtnCSS:hover::before {
+    box-shadow: inset 0 0 0 3px #2a2e34;
+    background: #e4b61a; }
+  .BtnCSS:hover a {
+    color: #2a2e34; }
+  .BtnCSS:hover::after {
+    box-shadow: inset 0 0 0 3px #2a2e34; }
+
+/*This si the play button, located on the main page*/
+.PlayBtnMain {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; }
+  .PlayBtnMain .PlayButton {
+    position: absolute;
+    top: 55%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    color: #e4b61a;
+    transition: all 0.25s ease;
+    z-index: 5; }
+
+.ReserveBtn {
+  /*Container CSS for the reserve button*/
+  position: absolute;
+  display: flex;
+  top: 85%;
+  left: 50%;
+  width: 10%;
+  transform: translateX(-50%);
+  /*Allow for smooth animated transition*/
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease;
+  text-align: center; }
+  .ReserveBtn .Reserve {
+    width: 100%;
+    position: relative;
+    color: #e4b61a;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: 400;
+    line-height: 4.9vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #2a2e34;
+    /*This is the outlined rectangle in yellow*/
+    /*This is the rectangle reserve button*/
+    /*On hover change colours from yellow to blue and vice versa*/ }
+    .ReserveBtn .Reserve svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 4.9vh; }
+    .ReserveBtn .Reserve rect {
+      stroke: #e4b61a;
+      stroke-width: 2;
+      /*transitioning when hovered*/
+      transition: all 0.35s linear; }
+    .ReserveBtn .Reserve:hover {
+      color: #2a2e34;
+      background: #e4b61a;
+      text-decoration: none; }
+      .ReserveBtn .Reserve:hover rect {
+        stroke-width: 5;
+        stroke: #2a2e34;
+        /*Dash effects when hovered, dashing spacing etc*/
+        stroke-dasharray: 15, 20;
+        stroke-dashoffset: 408;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.CloseBtnMain {
+  position: absolute;
+  right: 5%;
+  top: -3%;
+  width: 3rem;
+  height: 3rem;
+  font-size: .875rem;
+  border-radius: 100%;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none; }
+  .CloseBtnMain::before, .CloseBtnMain::after {
+    content: 'X'; }
+
+/*This popup is from the first main section which appears after you click the play button*/
+.PopupBackground {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  /*Transition for when opening and closing*/
+  transition: .64s ease-in-out; }
+
+.PopupMain {
+  /*ClosePopup X*/
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 50%;
+  /*Transitioning when clicked to rotate clockwise*/
+  transform: rotate(32deg);
+  transition: .64s ease-in-out; }
+  .PopupMain a {
+    text-decoration: none;
+    color: #e4b61a;
+    font-size: 2vh;
+    background-color: aqua; }
+
+.PopupBackground:target {
+  visibility: visible;
+  opacity: 1; }
+
+.PopupBackground:target .PopupMain {
+  bottom: 0;
+  right: 0;
+  transform: rotate(0); }
