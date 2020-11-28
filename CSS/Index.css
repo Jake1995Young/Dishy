@@ -88,6 +88,55 @@ html {
     font-family: "CinzelFont";
     text-align: center; }
 
+.AboutUsSection {
+  position: relative;
+  height: 100vh;
+  background: white; }
+  .AboutUsSection .Container {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 65%; }
+  .AboutUsSection .PortraitImage {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    display: inline-block;
+    padding: 1%; }
+  .AboutUsSection .InfoPortrait {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    display: inline-block;
+    padding: 1%;
+    text-transform: none;
+    font-family: "CinzelFont"; }
+    .AboutUsSection .InfoPortrait .Title {
+      text-transform: uppercase;
+      font-size: 7vh;
+      padding-bottom: 2%;
+      text-shadow: -2px 0px 2px #e4b61a; }
+    .AboutUsSection .InfoPortrait .Info {
+      text-align: left;
+      padding-top: 10%;
+      font-size: 1.8vh;
+      padding-right: 10%; }
+    .AboutUsSection .InfoPortrait .MenuButton {
+      position: absolute;
+      bottom: 6%;
+      text-decoration: none;
+      color: #e4b61a;
+      font-size: 2vh;
+      font-weight: 600;
+      /*
+            text-shadow: -2px 0px 0px rgba(42, 46, 52, 1);
+*/ }
+
 .BtnCSS {
   /*This is the yellow outline around the circle button*/
   /*Changes the background and the outline shadow*/
@@ -186,6 +235,7 @@ html {
         stroke-dashoffset: 408;
         transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
 
+/*This is the close button located on the popup from the main section*/
 .CloseBtnMain {
   position: absolute;
   right: 5%;

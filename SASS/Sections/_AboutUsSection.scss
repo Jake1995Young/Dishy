@@ -1,0 +1,66 @@
+.AboutUsSection {
+
+    @include PageSize;
+    background: white;
+
+    .Container {
+        position: absolute;
+        @include CenterFix;
+        width: 75%;
+        height: 65%;
+    }
+
+    .PortraitImage {
+        position: relative;
+        float: left;
+        width: 33.33%;
+        height: 100%;
+        display: inline-block;
+        padding: 1%;
+
+    }
+
+    .InfoPortrait {
+        position: relative;
+        float: left;
+        width: 33.33%;
+        height: 100%;
+        display: inline-block;
+        padding: 1%;
+        
+        text-transform: none;
+        font-family: "CinzelFont";
+        
+        .Title {
+            text-transform: uppercase;
+            font-size: 7vh;
+            padding-bottom: 2%;
+            text-shadow: -2px 0px 2px rgba(228, 182, 26, 1);
+        }
+
+        .Info {
+            text-align: left;
+            padding-top: 10%;
+            font-size: 1.8vh;
+            padding-right: 10%;
+        }
+
+        .MenuButton {
+            position: absolute;
+            bottom: 6%;
+            text-decoration: none;
+            color: $Mustard;
+            font-size: 2vh; 
+            font-weight: 600;
+/*
+            text-shadow: -2px 0px 0px rgba(42, 46, 52, 1);
+*/
+        }
+
+
+
+
+    }
+
+
+}

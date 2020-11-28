@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Dishy</title>
 
+    <!--set the html address icon-->
     <link rel="icon" href="Icons/ionicons-v2.0.1-master/png/512/fork.png" alt="Dishy Icon">
 
     <!--Links to icons frequently used and also the main CSS file-->
@@ -17,10 +18,11 @@
 <body>
     <section class="MainSection" id="MainSection">
 
+        <!--Navigation Bar-->
         <div class="NavList">
             <ul class="NavLinks">
-                <li class="Links Home"><a href="#">Home</a></li>
-                <li class="Links About"><a href="#">About</a></li>
+                <li class="Links Home"><a href="#MainSection">Home</a></li>
+                <li class="Links About"><a href="#AboutUsSection">About</a></li>
                 <li class="Links Menu"><a href="#">Menu</a></li>
                 <li class="Links Dishy"><a href="#" id="Dishy">Dishy</a></li>
                 <li class="Links Gallery"><a href="#">Gallery</a></li>
@@ -33,12 +35,6 @@
         <div class="BtnCSS PlayBtnMain" alt="Play button">
             <a class="ion-ios-play-outline PlayButton" href="#PopupVideo"></a>
         </div>
-        <div class="PopupBackground" id="PopupVideo">
-            <div class="PopupMain">
-                <video src="/Clips/Clip1.mp4" id="VideoClip" width="100%" height="100%" autoplay loop></video>
-                <a class="CloseBtnMain BtnCSS" href="#MainSection">X</a>
-            </div>
-        </div>
 
         <h1 class="Title">Classic Dishes Elevated</h1>
         <p class="Info">Let's elevate those favourite dishes of ours and <br>bring them into 2020.
@@ -48,10 +44,46 @@
             <a href="#" class="Reserve">
                 <svg>
                     <rect x="0" y="0" fill="none" width="100%" height="100%" />
-                </svg>Reserve a Table</a>
+                </svg>
+                Reserve a Table
+            </a>
         </div>
 
-        </a>
+        <!--Popup for clip space-->
+        <div class="PopupBackground" id="PopupVideo">
+            <div class="PopupMain">
+                <video src="/Clips/Clip1.mp4" id="VideoClip" width="100%" height="100%" autoplay loop></video>
+                <a class="CloseBtnMain BtnCSS" href="#MainSection">X</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="AboutUsSection" id="AboutUsSection">
+        <div class="Container">
+            <img src="/Images/pic9.jpg" alt="Picture 9" class="PortraitImage">
+            <img src="/Images/pic10.jpg" alt="Picture 10" class="PortraitImage">
+            <div class="InfoPortrait">
+                <h1 class="Title">The<br>Kitchen</h1>
+                <p class="Info">
+                    We are just like you,<br>
+                    Come from a passionate foody household.<br><br>
+                    We love our dishes,<br>
+                    Especially our classic dishes.<br>
+                    Where we differ from other kitchens is<br> 
+                    That we recognize classics,<br> 
+                    And rejuvenate them by adding some<br> 
+                    Spices or herbs.<br><br>
+                    Simply by adding something like <br>
+                    An extra clove of garlic<br> 
+                    can boost the flavour or any dish.
+
+                    So why not join us in our journey of giving light to some old flames</p>
+                <a href="#" class="MenuButton">See Our Menu</a>
+            </div>
+        </div>
+
+
+
     </section>
 
 </body>
