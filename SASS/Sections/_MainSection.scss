@@ -8,51 +8,6 @@
     background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic13.jpg");
     background-size: cover;
 
-    .NavList {
-        position: absolute;
-        left: 50%;
-        top: 5%;
-        transform: translateX(-50%);
-        height: 10%;
-    }
-
-    .NavLinks {
-        width: 100%;
-        height: 10%;
-
-        display: flex;
-        list-style: none;
-    }
-
-    .Links {
-        width: auto;
-        height: 10%;
-
-        padding-right: 3vh;
-        text-transform: uppercase;
-        font-family: "CinzelFont";
-    }
-
-    /*This CSS is for the nav link called Dishy, as I wanted it to have different CSS applied than the other Nav links*/
-    #Dishy {
-        /*Pre created font*/
-        font-family: "AlmondFont";
-        font-size: 8vh;
-        text-transform: none;
-        color: rgb(251, 225, 52);
-    }
-
-    .Links a {
-        text-decoration: none;
-        color: white;
-        line-height: 10%;
-        font-size: 3vh;
-    }
-
-    .Links a:hover {
-        color: rgb(251, 225, 52);
-    }
-
     .Title {
         position: absolute;
         /*Use of mixin*/

@@ -36,38 +36,7 @@ html {
   height: 100vh;
   /*Overlapping the image with a two tone gradient (grey->yellow)*/
   background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic13.jpg");
-  background-size: cover;
-  /*This CSS is for the nav link called Dishy, as I wanted it to have different CSS applied than the other Nav links*/ }
-  .MainSection .NavList {
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%);
-    height: 10%; }
-  .MainSection .NavLinks {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    list-style: none; }
-  .MainSection .Links {
-    width: auto;
-    height: 10%;
-    padding-right: 3vh;
-    text-transform: uppercase;
-    font-family: "CinzelFont"; }
-  .MainSection #Dishy {
-    /*Pre created font*/
-    font-family: "AlmondFont";
-    font-size: 8vh;
-    text-transform: none;
-    color: #fbe134; }
-  .MainSection .Links a {
-    text-decoration: none;
-    color: white;
-    line-height: 10%;
-    font-size: 3vh; }
-  .MainSection .Links a:hover {
-    color: #fbe134; }
+  background-size: cover; }
   .MainSection .Title {
     position: absolute;
     /*Use of mixin*/
@@ -123,7 +92,7 @@ html {
       text-shadow: -2px 0px 2px #e4b61a; }
     .AboutUsSection .InfoPortrait .Info {
       text-align: left;
-      padding-top: 10%;
+      padding-top: 5%;
       font-size: 1.8vh;
       padding-right: 10%; }
     .AboutUsSection .InfoPortrait .MenuButton {
@@ -133,9 +102,9 @@ html {
       color: #e4b61a;
       font-size: 2vh;
       font-weight: 600;
-      /*
-            text-shadow: -2px 0px 0px rgba(42, 46, 52, 1);
-*/ }
+      /*On hover highight the hovered element using a shadow*/ }
+      .AboutUsSection .InfoPortrait .MenuButton:hover {
+        text-shadow: 1px 1px #2a2e34; }
 
 .BtnCSS {
   /*This is the yellow outline around the circle button*/
@@ -291,3 +260,61 @@ html {
   bottom: 0;
   right: 0;
   transform: rotate(0); }
+
+/*This is the floating Navigation bar that is on every page except for the main section*/
+/*This CSS is for the nav link called Dishy, as I wanted it to have different CSS applied than the other Nav links*/
+#Dishy {
+  /*Pre created font*/
+  font-family: "AlmondFont";
+  font-size: 8vh;
+  text-transform: none;
+  color: #e4b61a; }
+
+/*Main Section Nav Bar*/
+.NavList {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  height: 10%; }
+  .NavList .NavLinks {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    list-style: none; }
+    .NavList .NavLinks .Links {
+      width: auto;
+      height: 10%;
+      padding-right: 3vh;
+      text-transform: uppercase;
+      font-family: "CinzelFont"; }
+    .NavList .NavLinks a {
+      text-decoration: none;
+      color: white;
+      line-height: 10%;
+      font-size: 3vh; }
+    .NavList .NavLinks a:hover {
+      color: #fbe134; }
+
+/*Other Sections Nav Bar*/
+.NavigationBar {
+  /*This allows the nav bar to stay in play on the top of the screen*/
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, #dfeaec 90%, #e4b61a 100%);
+  padding-bottom: 1%;
+  text-align: center;
+  /*This allows the navbar to be on top of other elements */
+  z-index: 5;
+  /*On hover highight the hovered element using a shadow and colour change*/ }
+  .NavigationBar a {
+    font-family: "CinzelFont";
+    font-size: 4vh;
+    color: #2a2e34;
+    text-align: center;
+    text-decoration: none;
+    /*Top Right Bottom Left*/
+    padding: 1% 1.5% 1% 1.5%; }
+  .NavigationBar a:hover {
+    color: #fbe134;
+    text-shadow: 2px 2px #2a2e34; }
