@@ -1,0 +1,90 @@
+.MenuSection {
+
+    @include PageSize;
+    width: 100%;
+    color: $Dark-Grey;
+    font-family: "CinzelFont";
+
+    .Title {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+
+        height: auto;
+        font-size: 7vh;
+    }
+
+    .MenuBtnContainer {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        width: 100%;
+
+        text-align: center;
+
+        & a {
+            text-decoration: none;
+            font-size: 4vh;
+        }
+
+        .BtnBox {
+            border: 2px solid $White-Grey;
+            padding: 1%;
+            margin: 1%;
+
+            &:hover {
+                border: 2px solid $Dark-Grey;
+            }
+        }
+    }
+
+    .FoodContainer {
+
+        display: none;
+
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 90%;
+        height: 60%;
+
+        transform: translateX(-50%);
+
+        background-color: orangered;
+
+    }
+    
+    .DessertsContainer {
+
+        display: none;
+
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 90%;
+        height: 60%;
+
+        transform: translateX(-50%);
+
+        background-color: purple;
+
+    }
+    
+    .CoctailsContainer {
+
+        display: none;
+
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 90%;
+        height: 60%;
+
+        transform: translateX(-50%);
+
+        background-color: royalblue;
+
+    }
+}
