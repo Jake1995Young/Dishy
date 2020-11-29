@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="Icons/ionicons-v2.0.1-master/css/ionicons.min.css">
 
+    <script src="/Scripts/Index.js"></script>
+
     <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
 </head>
 
@@ -88,7 +90,7 @@
                     can boost the flavour or any dish.
 
                     So why not join us in our journey of giving light to some old flames</p>
-                <a href="#" class="MenuButton">See Our Menu</a>
+                <a href="#MenuSection" class="MenuButton">See Our Menu</a>
             </div>
         </div>
     </section>
@@ -103,7 +105,7 @@
             <a class="BtnBox" id="CoctailsBtn" onclick="DisplayInfo('CoctailsContainer')">Coctails</a>
         </div>
 
-       <!--This menu if the food menu with the prices to the right, this is layed out using Flex-->
+        <!--This menu if the food menu with the prices to the right, this is layed out using Flex-->
         <div class="MenuContainer" id="FoodContainer">
             <div class="FlexContainer">
                 <div class="Flex">
@@ -171,7 +173,7 @@
             </div>
         </div>
 
-       <!--This menu if the desserts menu with the prices to the right, this is layed out using Flex-->
+        <!--This menu if the desserts menu with the prices to the right, this is layed out using Flex-->
         <div class="MenuContainer" id="DessertsContainer">
             <div class="FlexContainer">
                 <div class="Flex">
@@ -239,7 +241,7 @@
             </div>
         </div>
 
-       <!--This menu if the coctails menu with the prices to the right, this is layed out using Flex-->
+        <!--This menu if the coctails menu with the prices to the right, this is layed out using Flex-->
         <div class="MenuContainer" id="CoctailsContainer">
             <div class="FlexContainer">
                 <div class="Flex">
@@ -308,50 +310,11 @@
         </div>
     </section>
 
-    <script type="text/javascript">
-        function DisplayInfo(Page) {
-            var SrcPage = document.getElementById(Page);
-            var Food = document.getElementById('FoodContainer');
-            var Coctails = document.getElementById('CoctailsContainer');
-            var Desserts = document.getElementById('DessertsContainer');
-
-            /*If Else statement to run through the different situations for the menu*/
-            if (SrcPage == Food) {
-                if (SrcPage.style.display == 'block') {
-                    SrcPage.style.display = 'none';
-                } else {
-                    Food.style.opacity = 1;
-                    Food.style.display = 'block';
-                    Coctails.style.display = 'none';
-                    Desserts.style.display = 'none';
-                }
-            } else if (SrcPage == Coctails) {
-                if (SrcPage.style.display == 'block') {
-                    SrcPage.style.display = 'none';
-                } else {
-                    Coctails.style.opacity = 1;
-                    Food.style.display = 'none';
-                    Coctails.style.display = 'block';
-                    Desserts.style.display = 'none';
-                }
-            } else {
-                if (SrcPage.style.display == 'block') {
-                    SrcPage.style.display = 'none';
-                } else {
-                    Desserts.style.opacity = 1;
-                    Food.style.display = 'none';
-                    Coctails.style.display = 'none';
-                    Desserts.style.display = 'block';
-                }
-            }
-        }
-
-    </script>
-
-
-
-
-
+    <section class="IntervalSection">
+        <h1 class="Title">Carefully Curated</h1>
+        <p class="Info">Great tasting food is one of life's greatest adventures.<br>
+            With the use of different spices, flavours, textures, etc we can visit the different points of the world</p>
+    </section>
 
 
 

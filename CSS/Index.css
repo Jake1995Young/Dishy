@@ -150,6 +150,30 @@ html {
   .MenuSection #FoodContainer {
     opacity: 1; }
 
+.IntervalSection {
+  position: relative;
+  height: 95vh;
+  /*Overlapping the image with a two tone gradient (grey->yellow)*/
+  background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic6.jpg");
+  background-size: cover; }
+  .IntervalSection .Title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 7vh;
+    color: white;
+    font-family: "CinzelFont"; }
+  .IntervalSection .Info {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 3vh;
+    color: white;
+    font-family: "CinzelFont";
+    text-align: center; }
+
 .BtnCSS {
   /*This is the yellow outline around the circle button*/
   /*Changes the background and the outline shadow*/
