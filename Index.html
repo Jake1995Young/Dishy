@@ -93,7 +93,7 @@
         </div>
     </section>
 
-    <section class="MenuSection">
+    <section class="MenuSection" id="MenuSection">
 
         <h1 class="Title">Menu</h1>
 
@@ -103,48 +103,243 @@
             <a class="BtnBox" id="CoctailsBtn" onclick="DisplayInfo('CoctailsContainer')">Coctails</a>
         </div>
 
-        <div class="FoodContainer" id="FoodContainer">
-            test
+       <!--This menu if the food menu with the prices to the right, this is layed out using Flex-->
+        <div class="MenuContainer" id="FoodContainer">
+            <div class="FlexContainer">
+                <div class="Flex">
+                    <div class="InnerFlexContainer">
+                        <div class="InnerFlexLeft">
+                            <p>
+                                <b>Spaghetti Bolognese</b><br>
+                                Enriched tomato based sauce with mince twisted into spaghetti
+                            </p>
+                            <p>
+                                <br><br><b>Lasagne</b><br>
+                                Luscious layers of pasta, white sauce, Bolognese and cheese, topped with our signature crunch topping
+                            </p>
+                            <p>
+                                <br><br><b>Cheeseburger</b><br>
+                                Double whammy cheese burger, double the protein, double the cheese on a bouncy brioche bun, served with fries
+                            </p>
+                            <p>
+                                <br><br><b>10oz Steak</b><br>
+                                Generous 10oz serving steak accompanied with our house creamy peppercorn sauce, and seasonal vegetables
+                            </p>
+                        </div>
+                        <div class="InnerFlexRight">
+                            <p>$13.50</p>
+                            <br><br><br><br>
+                            <p>$13.50</p>
+                            <br><br><br><br>
+                            <p>$13.50</p>
+                            <br><br><br><br><br>
+                            <p>$13.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Flex">
+                    <div class="InnerFlexContainer">
+                        <div class="InnerFlexLeft">
+                            <p>
+                                <b>Salmon Fillet</b><br>
+                                A filling serving of our fresh sea salmon, served with dill sauce, and seasonal vegetables
+                            </p>
+                            <p>
+                                <br><br><b>Pepperoni Pizza</b><br>
+                                Our house dough is rolled into a perfect pizza, topped with that delicious sauce, fiery pepperoni and mozz
+                            </p>
+                            <p>
+                                <br><br><b>Carvery Roast</b><br>
+                                This is a Sunday's best type of dish. Thick cut turkey and ham, doused with lashings of gravy and seasonal vegetables
+                            </p>
+                            <p>
+                                <br><br><b>Creamy Carbonara</b><br>
+                                Another tasty pasta dish made with cream, smoked bacon and plenty of garlic, served with thick cut garlic sourdough
+                            </p>
+                        </div>
+                        <div class="InnerFlexRight">
+                            <p>$13.50</p>
+                            <br><br><br><br>
+                            <p>$13.50</p>
+                            <br><br><br><br>
+                            <p>$13.50</p>
+                            <br><br><br><br><br>
+                            <p>$13.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="DessertsContainer" id="DessertsContainer">
-            test
+       <!--This menu if the desserts menu with the prices to the right, this is layed out using Flex-->
+        <div class="MenuContainer" id="DessertsContainer">
+            <div class="FlexContainer">
+                <div class="Flex">
+                    <div class="InnerFlexContainer">
+                        <div class="InnerFlexLeft">
+                            <p>
+                                <b>Brownie</b><br>
+                                Fudgy, crispy and crunchy
+                            </p>
+                            <p>
+                                <br><br><b>Vanilla Cheesecake</b><br>
+                                Heavy, creamy and fluffy
+                            </p>
+                            <p>
+                                <br><br><b>Black Forest Gateau</b><br>
+                                Heavenly, sweet and enriched
+                            </p>
+                            <p>
+                                <br><br><b>Sticky Toffee Pudding</b><br>
+                                Sticky, sweet and worth it
+                            </p>
+                        </div>
+                        <div class="InnerFlexRight">
+                            <p>$4.50</p>
+                            <br><br><br>
+                            <p>$4.50</p>
+                            <br><br><br>
+                            <p>$4.50</p>
+                            <br><br><br>
+                            <p>$4.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Flex">
+                    <div class="InnerFlexContainer">
+                        <div class="InnerFlexLeft">
+                            <p>
+                                <b>Watermelon Salad</b><br>
+                                Healthy, quenching and is the perfect balance
+                            </p>
+                            <p>
+                                <br><br><b>Banoffee</b><br>
+                                Classic, sweet and soft
+                            </p>
+                            <p>
+                                <br><br><b>Neapolitan</b><br>
+                                Fun, flavourful and quenching
+                            </p>
+                            <p>
+                                <br><br><b>Chocolate Fudge</b><br>
+                                Indulgent, dark and dense
+                            </p>
+                        </div>
+                        <div class="InnerFlexRight">
+                            <p>$4.50</p>
+                            <br><br><br>
+                            <p>$4.50</p>
+                            <br><br><br>
+                            <p>$4.50</p>
+                            <br><br><br>
+                            <p>$4.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="CoctailsContainer" id="CoctailsContainer">
-            test
+       <!--This menu if the coctails menu with the prices to the right, this is layed out using Flex-->
+        <div class="MenuContainer" id="CoctailsContainer">
+            <div class="FlexContainer">
+                <div class="Flex">
+                    <div class="InnerFlexContainer">
+                        <div class="InnerFlexLeft">
+                            <p>
+                                <b>Cosmopolitan</b><br>
+                                Short, citrus and impactful
+                            </p>
+                            <p>
+                                <br><br><b>Mojito</b><br>
+                                Fresh, sweet and tasty
+                            </p>
+                            <p>
+                                <br><br><b>Strawberry Daquiri</b><br>
+                                Sweet, cold and fun
+                            </p>
+                            <p>
+                                <br><br><b>Caipirinha</b><br>
+                                Tangy, sweet and delicious
+                            </p>
+                        </div>
+                        <div class="InnerFlexRight">
+                            <p>$6.00</p>
+                            <br><br><br>
+                            <p>$6.00</p>
+                            <br><br><br>
+                            <p>$6.00</p>
+                            <br><br><br>
+                            <p>$6.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Flex">
+                    <div class="InnerFlexContainer">
+                        <div class="InnerFlexLeft">
+                            <p>
+                                <b>Espresso Martini</b><br>
+                                Caffeinated, short, and strong
+                            </p>
+                            <p>
+                                <br><br><b>Moscow Mule</b><br>
+                                Flavourful, fizzy, and sweet
+                            </p>
+                            <p>
+                                <br><br><b>Pornstar Martini</b><br>
+                                Short, dense, and bubbly
+                            </p>
+                            <p>
+                                <br><br><b>Margarita</b><br>
+                                Classic, tangy, salty
+                            </p>
+                        </div>
+                        <div class="InnerFlexRight">
+                            <p>$6.00</p>
+                            <br><br><br>
+                            <p>$6.00</p>
+                            <br><br><br>
+                            <p>$6.00</p>
+                            <br><br><br>
+                            <p>$6.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <script type="text/javascript">
-        function DisplayInfo(ele) {
-            var srcElement = document.getElementById(ele);
+        function DisplayInfo(Page) {
+            var SrcPage = document.getElementById(Page);
             var Food = document.getElementById('FoodContainer');
             var Coctails = document.getElementById('CoctailsContainer');
             var Desserts = document.getElementById('DessertsContainer');
-            
-            if(srcElement == Food){
-                if (srcElement.style.display == 'block') {
-                    srcElement.style.display = 'none';
+
+            /*If Else statement to run through the different situations for the menu*/
+            if (SrcPage == Food) {
+                if (SrcPage.style.display == 'block') {
+                    SrcPage.style.display = 'none';
                 } else {
-                    srcElement.style.display = 'block';
+                    Food.style.opacity = 1;
+                    Food.style.display = 'block';
                     Coctails.style.display = 'none';
                     Desserts.style.display = 'none';
                 }
-            }else if(srcElement == Coctails){
-                if (srcElement.style.display == 'block') {
-                    srcElement.style.display = 'none';
+            } else if (SrcPage == Coctails) {
+                if (SrcPage.style.display == 'block') {
+                    SrcPage.style.display = 'none';
                 } else {
-                    srcElement.style.display = 'none';
+                    Coctails.style.opacity = 1;
+                    Food.style.display = 'none';
                     Coctails.style.display = 'block';
                     Desserts.style.display = 'none';
                 }
-            }else{
-                 if (srcElement.style.display == 'block') {
-                    srcElement.style.display = 'none';
+            } else {
+                if (SrcPage.style.display == 'block') {
+                    SrcPage.style.display = 'none';
                 } else {
-                    srcElement.style.display = 'none';
+                    Desserts.style.opacity = 1;
+                    Food.style.display = 'none';
                     Coctails.style.display = 'none';
                     Desserts.style.display = 'block';
                 }

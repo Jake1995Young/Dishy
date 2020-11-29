@@ -111,7 +111,8 @@ html {
   height: 100vh;
   width: 100%;
   color: #595e65;
-  font-family: "CinzelFont"; }
+  font-family: "CinzelFont";
+  /*By default keep the food menu open*/ }
   .MenuSection .Title {
     position: absolute;
     top: 10%;
@@ -135,33 +136,19 @@ html {
       margin: 1%; }
       .MenuSection .MenuBtnContainer .BtnBox:hover {
         border: 2px solid #595e65; }
-  .MenuSection .FoodContainer {
-    display: none;
+  .MenuSection .MenuContainer {
     position: absolute;
     top: 35%;
     left: 50%;
-    width: 90%;
+    width: 100%;
     height: 60%;
+    font-size: 2.5vh;
+    font-family: "CinzelFont";
+    color: #595e65;
     transform: translateX(-50%);
-    background-color: orangered; }
-  .MenuSection .DessertsContainer {
-    display: none;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 90%;
-    height: 60%;
-    transform: translateX(-50%);
-    background-color: purple; }
-  .MenuSection .CoctailsContainer {
-    display: none;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 90%;
-    height: 60%;
-    transform: translateX(-50%);
-    background-color: royalblue; }
+    opacity: 0; }
+  .MenuSection #FoodContainer {
+    opacity: 1; }
 
 .BtnCSS {
   /*This is the yellow outline around the circle button*/
@@ -374,3 +361,29 @@ html {
   .NavigationBar a:hover {
     color: #fbe134;
     text-shadow: 2px 2px #595e65; }
+
+.FlexContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding-left: 3%; }
+
+.Flex {
+  width: 50%;
+  height: 100%;
+  margin: 5px;
+  padding: 5px; }
+
+.InnerFlexContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%; }
+
+.InnerFlexLeft {
+  height: 100%;
+  width: 80%; }
+
+.InnerFlexRight {
+  text-align: center;
+  width: 20%;
+  height: 100%; }
