@@ -304,6 +304,38 @@ html {
         font-family: "CinzelFont";
         color: #595e65; }
 
+.ContactSection {
+  position: relative;
+  height: 100vh;
+  /*Overlapping the image with a two tone gradient (grey->yellow)*/
+  background: linear-gradient(rgba(42, 46, 52, 0.2), rgba(251, 225, 52, 0.5)), url("/Images/pic14.jpg"); }
+  .ContactSection .ContactForm {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 30%;
+    height: 60%;
+    background-color: orangered; }
+    .ContactSection .ContactForm .Question {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translateX(-50%);
+      color: #595e65;
+      text-transform: uppercase;
+      font-size: 5vh; }
+    .ContactSection .ContactForm .LName {
+      color: #e4b61a;
+      text-transform: uppercase;
+      font-size: 4vh; }
+  .ContactSection .Map {
+    float: right;
+    width: 50%;
+    height: 100%;
+    overflow: hidden; }
+
 .BtnCSS {
   /*This is the yellow outline around the circle button*/
   /*Changes the background and the outline shadow*/

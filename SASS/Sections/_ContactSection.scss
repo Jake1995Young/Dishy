@@ -1,0 +1,41 @@
+.ContactSection{
+    @include PageSize;
+    
+    /*Overlapping the image with a two tone gradient (grey->yellow)*/
+    background: linear-gradient(rgba(42, 46, 52, .2), rgba(251, 225, 52, 0.5)), url("/Images/pic14.jpg");
+    
+    .ContactForm{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 30%;
+        height: 60%;
+        background-color: orangered;
+        
+        .Question{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translateX(-50%);
+            
+            color: $Dark-Grey;
+            text-transform: uppercase;
+            font-size: 5vh;
+        }
+        
+        .LName{
+            color: $Mustard;
+            text-transform: uppercase;
+            font-size: 4vh;
+        }
+    }
+    
+    .Map{
+        float: right;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
