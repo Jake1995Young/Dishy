@@ -1,11 +1,14 @@
 .GallerySection {
     @include PageSize;
-
+    height: 290vh;
+    
+    background: $White-Grey;
+    
     .rows {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 55%;
         width: 90%;
         transform: translateX(-50%);

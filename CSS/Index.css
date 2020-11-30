@@ -110,6 +110,7 @@ html {
   position: relative;
   height: 100vh;
   width: 100%;
+  background: #e9eaec;
   color: #595e65;
   font-family: "CinzelFont";
   /*By default keep the food menu open*/ }
@@ -161,6 +162,7 @@ html {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -60%);
+    text-align: center;
     font-size: 7vh;
     color: white;
     font-family: "CinzelFont"; }
@@ -177,12 +179,14 @@ html {
 .GallerySection {
   position: relative;
   height: 100vh;
+  height: 290vh;
+  background: #e9eaec;
   /* Create four equal columns that sits next to each other */ }
   .GallerySection .rows {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 55%;
     width: 90%;
     transform: translateX(-50%); }
@@ -195,6 +199,70 @@ html {
     vertical-align: middle;
     align-content: center;
     width: 100%; }
+
+.CustomerReviewsSection {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(251, 225, 52, 0.4); }
+  .CustomerReviewsSection .Title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 7vh;
+    color: #e4b61a;
+    font-family: "CinzelFont"; }
+  .CustomerReviewsSection .ReviewContainer {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; }
+    .CustomerReviewsSection .ReviewContainer .Review {
+      position: relative;
+      width: 33.33%;
+      height: 100%;
+      text-align: center; }
+      .CustomerReviewsSection .ReviewContainer .Review .Icon {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 6vh;
+        color: #e4b61a; }
+      .CustomerReviewsSection .ReviewContainer .Review .Info {
+        position: absolute;
+        top: 30%;
+        padding: 0 2% 0 2%;
+        font-size: 2.5vh;
+        font-family: "CinzelFont";
+        color: #595e65; }
+      .CustomerReviewsSection .ReviewContainer .Review .ProfilePic {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+        height: 20%;
+        border-radius: 30px/30px; }
+      .CustomerReviewsSection .ReviewContainer .Review .Name {
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5vh;
+        font-family: "CinzelFont";
+        color: #595e65; }
+      .CustomerReviewsSection .ReviewContainer .Review .Handle {
+        position: absolute;
+        top: 93%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #457b9d;
+        font-size: 2vh;
+        font-family: "CinzelFont"; }
 
 .BtnCSS {
   /*This is the yellow outline around the circle button*/
