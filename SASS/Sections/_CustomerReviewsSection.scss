@@ -2,33 +2,8 @@
     @include PageSize;
     background-color: rgba(251, 225, 52, .4);
 
-    .Title {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%);
-
-        font-size: 7vh;
-        color: $Mustard;
-        font-family: "CinzelFont";
-    }
-
     .ReviewContainer {
-
-        position: absolute;
-        width: 70%;
-        height: 60%;
-        top: 30%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-
-
-        .Review {
-            position: relative;
-            width: 33.33%;
-            height: 100%;
-
+        .Review {  
             text-align: center;
 
             .Icon {
@@ -44,40 +19,41 @@
             .Info {
                 position: absolute;
                 top: 30%;
-                
+
                 padding: 0 2% 0 2%;
                 font-size: 2.5vh;
                 font-family: "CinzelFont";
                 color: $Dark-Grey;
             }
-            
-            .ProfilePic{
+
+            .ProfilePic {
                 position: absolute;
                 top: 65%;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 20%;
                 height: 20%;
-                
+
                 border-radius: 30px/30px;
             }
-            .Name{
+
+            .Name {
                 position: absolute;
                 top: 88%;
                 left: 50%;
                 transform: translateX(-50%);
-                
+
                 font-size: 2.5vh;
                 font-family: "CinzelFont";
                 color: $Dark-Grey;
             }
-            
+
             .Handle {
                 position: absolute;
                 top: 93%;
                 left: 50%;
                 transform: translateX(-50%);
-                
+
                 color: $Dark-Blue;
                 font-size: 2vh;
                 font-family: "CinzelFont";
@@ -89,8 +65,8 @@
 
 
 
-        
 
-        
+
+
     }
 }

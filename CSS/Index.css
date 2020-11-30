@@ -30,6 +30,26 @@ html {
   font-family: CinzelFont;
   src: url(/Fonts/Cinzel-Regular.otf); }
 
+.Title {
+  position: absolute;
+  /*Use of mixin*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e9eaec;
+  font-size: 7vh;
+  font-family: "CinzelFont"; }
+
+.TitleTop {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 7vh;
+  color: #e4b61a;
+  font-family: "CinzelFont"; }
+
 /*This is the main section, it consists of a navbar, Video clip, information, and a booking button*/
 .MainSection {
   position: relative;
@@ -37,25 +57,6 @@ html {
   /*Overlapping the image with a two tone gradient (grey->yellow)*/
   background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic13.jpg");
   background-size: cover; }
-  .MainSection .Title {
-    position: absolute;
-    /*Use of mixin*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 7vh;
-    color: white;
-    font-family: "CinzelFont"; }
-  .MainSection .Info {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    font-size: 3vh;
-    color: white;
-    font-family: "CinzelFont";
-    text-align: center; }
 
 .AboutUsSection {
   position: relative;
@@ -85,19 +86,20 @@ html {
     padding: 1%;
     text-transform: none;
     font-family: "CinzelFont"; }
-    .AboutUsSection .InfoPortrait .Title {
+    .AboutUsSection .InfoPortrait .KitchenTitle {
+      color: #595e65;
       text-transform: uppercase;
       font-size: 7vh;
       padding-bottom: 2%;
       text-shadow: -2px 0px 2px #e4b61a; }
-    .AboutUsSection .InfoPortrait .Info {
+    .AboutUsSection .InfoPortrait .KitchenInfo {
+      color: #595e65;
       text-align: left;
-      padding-top: 5%;
-      font-size: 1.8vh;
+      font-size: 2vh;
       padding-right: 10%; }
     .AboutUsSection .InfoPortrait .MenuButton {
       position: absolute;
-      bottom: 6%;
+      bottom: 3%;
       text-decoration: none;
       color: #e4b61a;
       font-size: 2vh;
@@ -204,7 +206,52 @@ html {
   position: relative;
   height: 100vh;
   background-color: rgba(251, 225, 52, 0.4); }
-  .CustomerReviewsSection .Title {
+  .CustomerReviewsSection .ReviewContainer .Review {
+    text-align: center; }
+    .CustomerReviewsSection .ReviewContainer .Review .Icon {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 6vh;
+      color: #e4b61a; }
+    .CustomerReviewsSection .ReviewContainer .Review .Info {
+      position: absolute;
+      top: 30%;
+      padding: 0 2% 0 2%;
+      font-size: 2.5vh;
+      font-family: "CinzelFont";
+      color: #595e65; }
+    .CustomerReviewsSection .ReviewContainer .Review .ProfilePic {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20%;
+      height: 20%;
+      border-radius: 30px/30px; }
+    .CustomerReviewsSection .ReviewContainer .Review .Name {
+      position: absolute;
+      top: 88%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.5vh;
+      font-family: "CinzelFont";
+      color: #595e65; }
+    .CustomerReviewsSection .ReviewContainer .Review .Handle {
+      position: absolute;
+      top: 93%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #457b9d;
+      font-size: 2vh;
+      font-family: "CinzelFont"; }
+
+.EventsSection {
+  position: relative;
+  height: 100vh;
+  background-color: #e9eaec; }
+  .EventsSection .Title {
     position: absolute;
     top: 15%;
     left: 50%;
@@ -212,7 +259,7 @@ html {
     font-size: 7vh;
     color: #e4b61a;
     font-family: "CinzelFont"; }
-  .CustomerReviewsSection .ReviewContainer {
+  .EventsSection .EventsContainer {
     position: absolute;
     width: 70%;
     height: 60%;
@@ -220,49 +267,42 @@ html {
     left: 50%;
     transform: translateX(-50%);
     display: flex; }
-    .CustomerReviewsSection .ReviewContainer .Review {
-      position: relative;
-      width: 33.33%;
-      height: 100%;
-      text-align: center; }
-      .CustomerReviewsSection .ReviewContainer .Review .Icon {
+    .EventsSection .EventsContainer .Event {
+      background-color: white;
+      border-right: 25px solid #e9eaec; }
+      .EventsSection .EventsContainer .Event .DayPic {
         position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 6vh;
-        color: #e4b61a; }
-      .CustomerReviewsSection .ReviewContainer .Review .Info {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 50%; }
+      .EventsSection .EventsContainer .Event .Date {
         position: absolute;
-        top: 30%;
-        padding: 0 2% 0 2%;
-        font-size: 2.5vh;
+        top: 60%;
+        left: 5%;
+        width: 100%;
+        height: auto;
+        font-size: 2vh;
         font-family: "CinzelFont";
         color: #595e65; }
-      .CustomerReviewsSection .ReviewContainer .Review .ProfilePic {
+      .EventsSection .EventsContainer .Event .Day {
         position: absolute;
         top: 65%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20%;
-        height: 20%;
-        border-radius: 30px/30px; }
-      .CustomerReviewsSection .ReviewContainer .Review .Name {
+        left: 5%;
+        width: 100%;
+        height: auto;
+        font-size: 2vh;
+        font-family: "CinzelFont";
+        color: #e4b61a; }
+      .EventsSection .EventsContainer .Event .EventInfo {
         position: absolute;
-        top: 88%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2.5vh;
+        top: 72%;
+        left: 5%;
+        width: 90%;
+        height: auto;
+        font-size: 1.7vh;
         font-family: "CinzelFont";
         color: #595e65; }
-      .CustomerReviewsSection .ReviewContainer .Review .Handle {
-        position: absolute;
-        top: 93%;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #457b9d;
-        font-size: 2vh;
-        font-family: "CinzelFont"; }
 
 .BtnCSS {
   /*This is the yellow outline around the circle button*/
@@ -501,3 +541,18 @@ html {
   text-align: center;
   width: 20%;
   height: 100%; }
+
+.OneRow {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; }
+  .OneRow .ThreeCol {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    top: 0%;
+    left: 0%; }
