@@ -14,6 +14,9 @@
 
     <script src="/Scripts/Index.js"></script>
 
+    <!--Google Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
     <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
 </head>
 
@@ -343,7 +346,7 @@
     </section>
 
     <section class="CustomerReviewsSection" id="CustomerReviewsSection">
-        <h1 class="TitleTop">What our customers say. . .</h1>
+        <h1 class="TitleTop">What our customers say</h1>
         <div class="ReviewContainer OneRow">
             <div class="Review ThreeCol">
                 <a class="ion-chatbubble Icon " alt="Customer Review Icon"></a>
@@ -401,32 +404,38 @@
     </section>
 
     <section class="ContactSection" id="ContactSection">
-        <form action="/" method="post" class="ContactForm">
+        <form class="QueryForm">
+            <h1 class="FormName TitleTop">Write To Us</h1>
 
-            <h1 class="Question">Let Us Know</h1>
-            <label class="LName" for="">Name</label>
-            <input type="text" required autocomplete="off">
+            <div class="field NameField">
+                <label for="Name">
+                    <i class="Name"></i>Your Name
+                </label>
+                <input name="Name" class="Input" type="text" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="field EmailField" tabindex="2">
+                <label for="Email">
+                    <i class="Email"></i>Your Email
+                </label>
+                <input name="Email" class="Input" type="text" placeholder="email@domain.com" required>
+            </div>
+            <div class="field MessageField">
+                <label for="Message">
+                    <i class="Message"></i>Your Message
+                </label>
+                <textarea name="Message" class=" Input MessageInput" placeholder="type here" required></textarea>
+            </div>
 
-            <label class="LName" for="">Email</label>
-            <input type="email" required autocomplete="off">
-
-            <label class="LName" for="">Phone Number</label>
-            <input type="number" required autocomplete="off">
-
-            <label class="LName" for="">Question</label>
-            <input type="text" required autocomplete="off">
-
-            <button type="submit"></button>
+            <button type="submit" class="SubmitButton">
+                <span>Send Message</span>
+            </button>
         </form>
 
-        <img src="/Images/pic1.jpg" alt="" class="Map">
-        
-        
+        <div id="map" class="Map">
+            <iframe class="Contents" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-6.394611597061157%2C53.35106045165994%2C-6.389590501785279%2C53.35350356628397&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+        </div>
 
     </section>
-
-
-
 
 
 
