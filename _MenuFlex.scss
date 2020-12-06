@@ -1,0 +1,32 @@
+.FlexContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-left: 3%;
+}
+
+.Flex {
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+
+
+}
+
+.InnerFlexContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.InnerFlexLeft {
+    height: 100%;
+    width: 80%;
+}
+
+.InnerFlexRight {
+    text-align: center;
+    width: 20%;
+    height: 100%;
+}

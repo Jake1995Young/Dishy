@@ -1,0 +1,33 @@
+/*This button is used in the contact section*/
+
+.SubmitButton {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 30%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+
+
+    line-height: 1;
+    font-size: 2vh;
+    letter-spacing: 1px;
+    border: 3px solid $Mustard;
+    background: $Dark-Grey;
+    color: $Mustard;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .35s;
+}
+
+.SubmitButton:hover {
+    background: $Mustard;
+    color: $Dark-Grey;
+}
+
+.SubmitButton span {
+    opacity: 1;
+    visibility: visible;
+    transition: all .35s;
+}
