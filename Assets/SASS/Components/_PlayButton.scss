@@ -21,7 +21,8 @@
         transition: all 0.25s ease;
         z-index: 5;
     }
+
+    .PlayButton:hover {
+        color: $Dark-Grey;
+    }
 }
-
-
-

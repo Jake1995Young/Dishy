@@ -3,7 +3,7 @@
     @include PageSize;
 
     /*Overlapping the image with a two tone gradient (grey->yellow)*/
-    background: linear-gradient(rgba(42, 46, 52, .2), rgba(251, 225, 52, 0.5)), url("/Images/pic14.jpg");
+    background: linear-gradient(rgba(42, 46, 52, .2), rgba(251, 225, 52, 0.5)), url("Assets/Images/pic14.jpg");
 
 
     .Map {

@@ -55,7 +55,7 @@ html {
   position: relative;
   height: 100vh;
   /*Overlapping the image with a two tone gradient (grey->yellow)*/
-  background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic13.jpg");
+  background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Assets/Images/pic13.jpg");
   background-size: cover; }
   .MainSection .Info {
     position: absolute;
@@ -166,7 +166,7 @@ html {
   position: relative;
   height: 95vh;
   /*Overlapping the image with a two tone gradient (grey->yellow)*/
-  background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic6.jpg");
+  background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Assets/Images/pic6.jpg");
   background-size: cover; }
   .IntervalSection .Title {
     position: absolute;
@@ -321,7 +321,7 @@ html {
   position: relative;
   height: 100vh;
   /*Overlapping the image with a two tone gradient (grey->yellow)*/
-  background: linear-gradient(rgba(42, 46, 52, 0.2), rgba(251, 225, 52, 0.5)), url("/Images/pic14.jpg"); }
+  background: linear-gradient(rgba(42, 46, 52, 0.2), rgba(251, 225, 52, 0.5)), url("Assets/Images/pic14.jpg"); }
   .ContactSection .Map {
     position: absolute;
     top: 25%;
@@ -417,6 +417,8 @@ html {
     color: #e4b61a;
     transition: all 0.25s ease;
     z-index: 5; }
+  .PlayBtnMain .PlayButton:hover {
+    color: #595e65; }
 
 .ReserveBtn {
   /*Container CSS for the reserve button*/
