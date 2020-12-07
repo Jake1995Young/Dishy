@@ -32,15 +32,10 @@
         background: $Mustard;
     }
 
-    /*Changes the Play icon to Dark grey on hover*/
-    &:hover a {
-        color: $Dark-Grey;
-    }
-
     /*Changes the border to dark grey on hover*/
     &:hover {
         &::after {
             box-shadow: inset 0 0 0 3px $Dark-Grey;
-        }
+        }        
     }
 }

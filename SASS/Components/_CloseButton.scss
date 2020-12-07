@@ -11,9 +11,22 @@
     text-align: center;
     cursor: pointer;
     text-decoration: none;
-
+    
+    /*Change the colour of X on hover to Dark-Grey*/
+    &:hover{
+        color: $Dark-Grey;
+    }
+    
     &::before,
     &::after {
         content: 'X';
     }
+    
 }
+
+#CloseBtn{
+    
+}
+
+
+
