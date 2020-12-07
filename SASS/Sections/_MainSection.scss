@@ -7,5 +7,17 @@
     /*Overlapping the image with a two tone gradient (grey->yellow)*/
     background: linear-gradient(rgba(42, 46, 52, 0.7), rgba(251, 225, 52, 0.5)), url("/Images/pic13.jpg");
     background-size: cover;
+    
+    .Info {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        
+        font-size: 3vh;
+        color: white;
+        font-family: "CinzelFont";
+        text-align: center;
+    }  
 }
 

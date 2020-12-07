@@ -31,21 +31,19 @@ html {
     position: absolute;
     /*Use of mixin*/
     @include CenterFix;
-    
+
     color: $White-Grey;
     font-size: 7vh;
     font-family: "CinzelFont";
 }
 
-.TitleTop{
+.TitleTop {
     position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%);
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
 
-        font-size: 7vh;
-        color: $Mustard;
-        font-family: "CinzelFont";
+    font-size: 7vh;
+    color: $Mustard;
+    font-family: "CinzelFont";
 }
-
-
