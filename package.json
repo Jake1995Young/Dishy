@@ -1,0 +1,22 @@
+{
+  "name": "dishy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jake1995Young/dishy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jake1995Young/dishy/issues"
+  },
+  "homepage": "https://github.com/Jake1995Young/dishy#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
