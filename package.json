@@ -1,22 +1,24 @@
 {
   "name": "dishy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A online recipe webiste with upscaled dishes",
+  "main": "Index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass SASS/Main.scss CSS/Index.css -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jake1995Young/dishy.git"
+    "url": "git+https://github.com/Jake1995Young/Dishy.git"
   },
-  "author": "",
+  "author": "Jake Young",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jake1995Young/dishy/issues"
+    "url": "https://github.com/Jake1995Young/Dishy/issues"
   },
-  "homepage": "https://github.com/Jake1995Young/dishy#readme",
+  "homepage": "https://github.com/Jake1995Young/Dishy#readme",
   "dependencies": {
+    "git": "^0.1.5",
     "node-sass": "^5.0.0"
-  }
+  },
+  "devDependencies": {}
 }
