@@ -1,0 +1,28 @@
+/*This si the play button, located on the main page*/
+
+.PlayBtnMain {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    .PlayButton {
+        position: absolute;
+        top: 55%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+
+        font-size: 5vh;
+        color: $Mustard;
+        transition: all 0.25s ease;
+        z-index: 5;
+    }
+
+    .PlayButton:hover {
+        color: $Dark-Grey;
+    }
+}
